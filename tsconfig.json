@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",                   // Support for ES Modules
+    "outDir": "./dist",                     // Output directory
+    "moduleResolution": "NodeNext",         // Enable NodeNext resolution
+    "declaration": true,                    // Generate .d.ts files for TypeScript support
+    "declarationDir": "./dist",       // Output directory for type declarations
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,11 +1,13 @@
 {
   "name": "bytesizes",
-  "version": "1.0.0",
+  "version": "2.1.4",
   "description": "A utility to check the size of files or folders and convert sizes between different units.",
-  "main": "bytesizes.js",
+  "main": "dist/bytesizes.js",
+  "module": "dist/bytesizes.mjs",
+  "types": "dist/bytesizes.d.ts",
   "scripts": {
-    "start": "node bytesizes.js",    
-    "prepare": "npm test"
+    "start": "node dist/bytesizes.js",
+    "build": "tsc"
   },
   "keywords": [
     "file-size",
@@ -21,17 +23,23 @@
     "type": "git",
     "url": "https://github.com/Alpha5959/ByteSizes.git"
   },
-  "homepage": "https://github.com/Alpha5959/ByteSizes#readme", 
+  "homepage": "https://github.com/Alpha5959/ByteSizes#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/ByteSizes/issues"
+    "url": "https://github.com/Alpha5959/ByteSizes/issues"
   },
   "engines": {
-    "node": ">=14.0.0" 
+    "node": ">=14.0.0"
   },
   "files": [
-    "bytesizes.js"
+    "dist/"
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "rollup": "^3.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^5.6.2"
   }
 }

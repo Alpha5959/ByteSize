@@ -1,7 +1,7 @@
-const fs = require('fs').promises;
-const path = require('path');
+import { promises as fs } from 'fs';
+import path from 'path';
 
-class ByteSize {
+class ByteSizes {
   static units = {
     bytes: 1,
     KB: 1024,
@@ -22,12 +22,9 @@ class ByteSize {
   }
 
   static async getFolderSize(folderPath) {
-    const start = this.startTimer();
     try {
       const files = await fs.readdir(folderPath);
       const sizes = await Promise.all(files.map(file => this.getItemSize(path.join(folderPath, file))));
-      const duration = this.getElapsedTime(start);
-      console.log(`getFolderSize took ${duration.toFixed(2)} ms`);
       return sizes.reduce((total, size) => total + size, 0);
     } catch (err) {
       throw this.handleError(`Error reading directory: ${folderPath}`, err);
@@ -54,4 +51,4 @@ class ByteSize {
   }
 }
 
-module.exports = ByteSize;
+export default ByteSizes;
