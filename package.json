@@ -1,0 +1,37 @@
+{
+  "name": "bytesizes",
+  "version": "1.0.0",
+  "description": "A utility to check the size of files or folders and convert sizes between different units.",
+  "main": "bytesizes.js",
+  "scripts": {
+    "start": "node bytesizes.js",    
+    "prepare": "npm test"
+  },
+  "keywords": [
+    "file-size",
+    "folder-size",
+    "utility",
+    "bytes",
+    "filesystem",
+    "size-converter"
+  ],
+  "author": "xkroenen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alpha5959/ByteSizes.git"
+  },
+  "homepage": "https://github.com/Alpha5959/ByteSizes#readme", 
+  "bugs": {
+    "url": "https://github.com/yourusername/ByteSizes/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0" 
+  },
+  "files": [
+    "bytesizes.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
