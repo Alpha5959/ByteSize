@@ -1,6 +1,10 @@
 # ByteSizes
 
-![npm](https://img.shields.io/npm/v/bytesizes) ![npm](https://img.shields.io/npm/l/bytesizes)
+[![NPM Version](https://img.shields.io/npm/v/bytesizes?style=for-the-badge)](https://www.npmjs.com/package/bytesizes)
+[![Repository Size](https://img.shields.io/github/repo-size/Alpha5959/bytesizes?style=for-the-badge)](https://github.com/Alpha5959/bytesizes)
+[![License](https://img.shields.io/npm/l/bytesizes?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/npm/dt/bytesizes?style=for-the-badge)](https://www.npmjs.com/package/bytesizes)
+[![Support](https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord)](https://discord.com/invite/Rw5gRVqSaK)
 
 **ByteSizes** is a lightweight Node.js package designed for efficiently checking the size of files and folders while providing convenient size conversions. With its simple interface and robust error handling, ByteSizes is perfect for developers needing to manage and monitor filesystem sizes.
 
