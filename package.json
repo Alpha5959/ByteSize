@@ -1,6 +1,6 @@
 {
   "name": "bytesizes",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "A utility to check the size of files or folders and convert sizes between different units.",
   "main": "dist/bytesizes.js",
   "module": "dist/bytesizes.mjs",
