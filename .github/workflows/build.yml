@@ -9,7 +9,7 @@ jobs:
     name: Build and Publish Package
     runs-on: ubuntu-latest
     permissions:
-      id-token: write 
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,6 +31,12 @@ jobs:
           npm publish --provenance --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
+      - name: Attest Build Provenance
+        uses: actions/attest-build-provenance@v1.4.3
+        with:
+          step-command: npm run build
+          predicate-type: slsa-provenance
 
       - name: Create GitHub release with provenance
         run: |
